@@ -9,6 +9,7 @@ import { TabContext, TabList, TabPanel } from "@mui/lab";
 import { Link } from "react-router-dom";
 
 type Book = {
+  id: number;
   author: string;
   country: string;
   imageLink: string;

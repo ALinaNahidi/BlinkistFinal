@@ -32,6 +32,7 @@ interface ExploreDropDownProps {
   bookObject:Array<Book>;
 }
 type Book = {
+  id: number;
   author: string;
   country: string;
   imageLink: string;

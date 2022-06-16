@@ -9,6 +9,7 @@ import { makeStyles } from "@mui/styles";
 import { Theme } from "@emotion/react";
 
 type Book = {
+  id: number;
   author: string;
   country: string;
   imageLink: string;

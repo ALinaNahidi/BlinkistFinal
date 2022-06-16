@@ -18,6 +18,7 @@ import ReadAndFinished from "../../atoms/ReadandFinishedButton";
 import { Link } from "react-router-dom";
 
 type Book = {
+  id: number;
   author: string;
   country: string;
   imageLink: string;

@@ -8,6 +8,7 @@ import TextFieldSearch from '../../molecules/TextFieldSearch';
 import { useLocation } from 'react-router-dom';
 import EntrepeneushipTemplate from '../../template/EntrepeneushipPage';
 type Book = {
+  id: number;
   author: string;
   country: string;
   imageLink: string;

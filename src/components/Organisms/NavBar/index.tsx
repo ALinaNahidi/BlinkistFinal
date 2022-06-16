@@ -21,6 +21,7 @@ import ExploreDropDown from "../ExploreDropDown";
 import { Backdrop, CssBaseline } from "@mui/material";
 
 type Book = {
+  id: number;
   author: string;
   country: string;
   imageLink: string;

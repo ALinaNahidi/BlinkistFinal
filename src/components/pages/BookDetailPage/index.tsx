@@ -6,6 +6,7 @@ import BookDetailComponent from "../../Organisms/BookDetailComponent";
 import BookDetailTemplate from "../../template/BookDetailTemplate";
 
 type Book = {
+  id: number;
   author: string;
   country: string;
   imageLink: string;
