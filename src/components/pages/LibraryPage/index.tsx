@@ -2,13 +2,13 @@
 // import axios from "axios";
 // import React, { useState } from "react";
 // import { useLocation } from "react-router-dom";
-// import { getBooks } from "../../../Data/data";
 // import TypographyComponent from "../../atoms/Typography";
 // import Footer from "../../Organisms/Footer";
 // import NavBar from "../../Organisms/NavBar";
 // import BlinkistTabs from "../../Organisms/Tabs";
 // import MyLibraryTemplate from "../../template/MyLibrarayTemplate";
 // type Book = {
+//   id: number;
 //   author: string;
 //   country: string;
 //   imageLink: string;
@@ -29,6 +29,7 @@
 // }
 // const defaultProps = {
 //   book: {
+//     id: 1,
 //     author: "",
 //     country: "",
 //     imageLink: "",
@@ -64,54 +65,66 @@
 
 //   React.useEffect(() => {
 //     const getBooksFormServer = async () => {
-//       if (check) {
-//         setBookObject(check.bookObjectFromState);
-//       } else {
 //         setBookObject(await (await axios("http://localhost:8000/data")).data);
 //       }
-//     };
+
 //     getBooksFormServer();
+
 //     if (tab === "2") {
-//       const bookObjectTemp = [...bookObject];
+//       const updatePost = async () => {
+//         const requestOptions = {
+//           status: "finished",
+//         };
+//          await axios.patch(
+//           `http://localhost:8000/data/${book.id}`,
+//           requestOptions
+//         );
+//         setBookObject(await(await axios("http://localhost:8000/data")).data);
+//       };
 
-//       var index = -1;
-//       for (let i = 0; i < bookObjectTemp.length; i++) {
-//         if (
-//           bookObjectTemp[i].title === book.title &&
-//           bookObjectTemp[i].pages === book.pages
-//         )
-//           index = i;
-//       }
-//       bookObjectTemp[index].status === "myLibrary"
-//         ? (bookObjectTemp[index].status = "finished")
-//         : (bookObjectTemp[index].status = "finished");
+//       updatePost();
 
-//       if (bookObjectTemp[index].status === "reading") {
-//         handleFinishedClick(book);
-//       }
-
-//       setBookObject([...bookObjectTemp]);
+//       console.log(bookObjectFromState);
 //     }
 //   }, [count]);
 
 //   const handleFinishedClick = (book: Book) => {
-//     const bookObjectTemp = [...bookObject];
-//     const index = bookObjectTemp.indexOf(book);
-//     bookObjectTemp[index] = { ...book };
+//     if (book.status === "reading") {
+//       const updatePost = async () => {
+//         const requestOptions = {
+//           status: "finished",
+//         };
+//        await axios.patch(
+//           `http://localhost:8000/data/${book.id}`,
+//           requestOptions
+//         );
+//         setBookObject(await(await axios("http://localhost:8000/data")).data);
+//       };
+//       updatePost();
 
-//     bookObjectTemp[index].status === "reading"
-//       ? (bookObjectTemp[index].status = "finished")
-//       : (bookObjectTemp[index].status = "reading");
+//       console.log(bookObjectFromState);
+//     } else {
+//       const updatePost = async () => {
+//         const requestOptions = {
+//           status: "reading",
+//         };
+//          await axios.patch(
+//           `http://localhost:8000/data/${book.id}`,
+//           requestOptions
+//         );
+//         setBookObject(await(await axios("http://localhost:8000/data")).data);
+//       };
 
-//     setBookObject([...bookObjectTemp]);
-//     console.log(bookObject);
+//       updatePost();
+
+//       console.log(bookObjectFromState);
+//     }
 //   };
 
 //   return (
 //     <React.Fragment>
 //       <NavBar bookObject={bookObject} />
 //       <MyLibraryTemplate
-
 //         blinkistTabs={
 //           <BlinkistTabs
 //             value={tab}
@@ -142,6 +155,9 @@ import Footer from "../../Organisms/Footer";
 import NavBar from "../../Organisms/NavBar";
 import BlinkistTabs from "../../Organisms/Tabs";
 import MyLibraryTemplate from "../../template/MyLibrarayTemplate";
+import store from "./topLevel";
+import { loadblinks, updateBlinkStatus } from "../../../store/blinks";
+
 type Book = {
   id: number;
   author: string;
@@ -181,79 +197,60 @@ const defaultProps = {
 };
 
 const MyLibraryPage = () => {
+  store.dispatch(loadblinks());
   const { state } = useLocation();
   var book = defaultProps.book;
   var tab = defaultProps.tab;
-  var bookObjectFromState: any = [];
+  var bookObjectFromState: any = store.getState().entities.blinks.list;
 
   const check = state as LocationState;
   console.log(check);
   if (check) {
     book = check.book;
     tab = check.tab;
-    bookObjectFromState = check.bookObjectFromState;
   }
 
   const [bookObject, setBookObject] = React.useState(bookObjectFromState);
 
-  const [count, setCount] = useState("");
+  const [count, setCount] = useState(0);
 
   React.useEffect(() => {
-    const getBooksFormServer = async () => {
-        setBookObject(await (await axios("http://localhost:8000/data")).data);
-      }
+    store.dispatch(loadblinks());
 
-    getBooksFormServer();
+    setBookObject(store.getState().entities.blinks.list);
 
-    if (tab === "2") {
-      const updatePost = async () => {
-        const requestOptions = {
-          status: "finished",
-        };
-         await axios.patch(
-          `http://localhost:8000/data/${book.id}`,
-          requestOptions
-        );
-        setBookObject(await(await axios("http://localhost:8000/data")).data);
-      };
-
-      updatePost();
-     
-      console.log(bookObjectFromState);
+    if (tab.toString() === "2" && book.status.toString() === "myLibrary") {
+      handleMyLibrary();
+    } else if (tab.toString() === "2" && book.status.toString() === "reading") {
+      handleMyLibrary();
     }
-  }, [count]);
+  }, []);
 
-  const handleFinishedClick = (book: Book) => {
+  const handleFinishedClick = async (book: Book) => {
     if (book.status === "reading") {
-      const updatePost = async () => {
-        const requestOptions = {
-          status: "finished",
-        };
-       await axios.patch(
-          `http://localhost:8000/data/${book.id}`,
-          requestOptions
-        );
-        setBookObject(await(await axios("http://localhost:8000/data")).data);
-      };
-      updatePost();
-      
-      console.log(bookObjectFromState);
-    } else {
-      const updatePost = async () => {
-        const requestOptions = {
-          status: "reading",
-        };
-         await axios.patch(
-          `http://localhost:8000/data/${book.id}`,
-          requestOptions
-        );
-        setBookObject(await(await axios("http://localhost:8000/data")).data);
-      };
+      var response = await store.dispatch(
+        updateBlinkStatus(book.id, "finished")
+      );
+      console.log(response);
+      setCount(count + 1);
 
-      updatePost();
-  
-      console.log(bookObjectFromState);
+      setBookObject(store.getState().entities.blinks.list);
+    } else {
+      var response = await store.dispatch(
+        updateBlinkStatus(book.id, "reading")
+      );
+      console.log(response);
+      setCount(count + 1);
+
+      setBookObject(store.getState().entities.blinks.list);
     }
+    setCount(20);
+  };
+
+  const handleMyLibrary = async () => {
+    var response = await store.dispatch(updateBlinkStatus(book.id, "finished"));
+    console.log(response);
+    setBookObject(store.getState().entities.blinks.list);
   };
 
   return (
