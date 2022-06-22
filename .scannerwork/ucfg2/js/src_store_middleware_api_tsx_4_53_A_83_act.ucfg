@@ -1,0 +1,635 @@
+
+*src_store_middleware_api_tsx_4_53_A_83_act]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx4 (J"s4_1*®
+s4_1
+<synthetic> (C
+A
+
+__unknown_file (	
+%global"__id**
+
+%env"
+globalK
+I
+
+__unknown_file (
+
+%sc-P_24_0"__id**
+
+%env"
+%scope-P_24J
+H
+
+__unknown_file (	
+%expr_0"__id**
+
+
+%sc-P_24_0"	
+actionsL
+J
+
+__unknown_file (	
+%expr_1"__id**
+	
+%expr_0"
+apiCallBeganê
+ç
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (/
+%fieldAccess_0"__id**
+
+action"
+typeë
+é
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (/
+%fieldAccess_1"__id**
+	
+%expr_1"
+typeß
+§
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (/
+%binOpRes_0"__js_unequal*
+
+%fieldAccess_0*
+
+%fieldAccess_1*
+s4_2
+s4_4*Í
+s4_2
+<synthetic> (S
+Q
+
+__unknown_file (
+%sc-A_82_nex_0"__id**
+
+%env"
+%scope-A_82_nexS
+Q
+
+__unknown_file (
+%sc-A_82_nex_1"__id**
+
+%env"
+%scope-A_82_nexØ"¨
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx8 (<
+
+%funcRes_0*
+
+%sc-A_82_nex_1"
+next2
+	
+%global2
+
+%env2
+
+
+action"o
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx1 (E
+
+
+%funcRes_0*Ø
+
+s4_4
+<synthetic> (F
+D
+
+__unknown_file (	
+%expr_2"__id**
+
+action"	
+payloadÖ
+Ç
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx
+ (
+url"__id**
+	
+%expr_2"
+urlF
+D
+
+__unknown_file (	
+%expr_3"__id**
+
+action"	
+payloadã
+à
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (
+method"__id**
+	
+%expr_3"
+methodF
+D
+
+__unknown_file (	
+%expr_4"__id**
+
+action"	
+payloadá
+Ñ
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (
+data"__id**
+	
+%expr_4"
+dataF
+D
+
+__unknown_file (	
+%expr_5"__id**
+
+action"	
+payloadç
+ä
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx ($	
+onStart"__id**
+	
+%expr_5"	
+onStartF
+D
+
+__unknown_file (	
+%expr_6"__id**
+
+action"	
+payloadë
+é
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx& (/
+	onSuccess"__id**
+	
+%expr_6"
+	onSuccessF
+D
+
+__unknown_file (	
+%expr_7"__id**
+
+action"	
+payloadç
+ä
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx1 (8	
+onError"__id**
+	
+%expr_7"	
+onError*
+s4_5
+s4_6*ß
+s4_5
+<synthetic> (S
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_0"__id**
+
+%env"
+%scope-A_81_Ptr~|
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx	 	()
+	%object_0Object"Objectî
+ë
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx	 	('
+
+	%object_0Object"
+type"__id*
+	
+onStartS
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_1"__id**
+
+%env"
+%scope-A_81_Ptræ"ª
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx	 	(
+
+%funcRes_1*
+
+%sc-A_81_Ptr_1"
+
+dispatch2
+	
+%global2
+
+%env2
+
+	%object_0Object*
+s4_6*’
+s4_6
+<synthetic> (S
+Q
+
+__unknown_file (
+%sc-A_82_nex_2"__id**
+
+%env"
+%scope-A_82_nexS
+Q
+
+__unknown_file (
+%sc-A_82_nex_3"__id**
+
+%env"
+%scope-A_82_nexØ"¨
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (
+
+%funcRes_2*
+
+%sc-A_82_nex_3"
+next2
+	
+%global2
+
+%env2
+
+
+actionK
+I
+
+__unknown_file (
+
+%sc-P_24_1"__id**
+
+%env"
+%scope-P_24*
+s4_7
+s4_10*ä
+s4_7
+<synthetic> (H
+F
+
+__unknown_file (	
+%expr_8"__id**
+
+
+%sc-P_24_1"
+axios~|
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx) (
+	%object_1Object"Object™
+ß
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (+ 
+
+	%object_1Object"	
+baseURL"__id*
+http://localhost:8000/dataè
+å
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (	
+
+	%object_1Object"
+url"__id*
+
+urlï
+í
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (
+
+	%object_1Object"
+method"__id*
+
+
+methodë
+é
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (
+
+
+	%object_1Object"
+data"__id*
+
+dataG
+E
+
+__unknown_file (	
+%expr_9"__id**
+	
+%expr_8"	
+request∂"≥
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx! ((
+
+%methRes_0*
+	
+%expr_8"	
+request2
+	
+%expr_82
+
+%env2
+
+	%object_1Objectã
+à
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx
+ (
+%response~iSc_1"__id*
+
+
+%methRes_0S
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_2"__id**
+
+%env"
+%scope-A_81_PtrK
+I
+
+__unknown_file (
+
+%sc-P_24_2"__id**
+
+%env"
+%scope-P_24K
+I
+
+__unknown_file (
+
+%expr_10"__id**
+
+
+%sc-P_24_2"	
+actionsP
+N
+
+__unknown_file (
+
+%expr_11"__id* *
+
+
+%expr_10"
+apiCallSuccess«"ƒ
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx ()
+
+%methRes_1*
+
+
+%expr_10"
+apiCallSuccess2
+
+
+%expr_102
+
+%env2*
+
+%response~iSc_1"
+dataS
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_3"__id**
+
+%env"
+%scope-A_81_Ptr∑"¥
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx
+ (
+
+%funcRes_3*
+
+%sc-A_81_Ptr_3"
+
+dispatch2
+	
+%global2
+
+%env2
+
+
+%methRes_1*
+s4_8
+s4_9*’
+s4_8
+<synthetic> (S
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_4"__id**
+
+%env"
+%scope-A_81_Ptr~|
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx" (M
+	%object_2Object"Objectñ
+ì
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx$ (3
+
+	%object_2Object"
+type"__id*
+
+	onSuccess©
+¶
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx5 (K 
+
+	%object_2Object"	
+payload"__id**
+
+%response~iSc_1"
+dataS
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_5"__id**
+
+%env"
+%scope-A_81_Ptræ"ª
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (!
+
+%funcRes_4*
+
+%sc-A_81_Ptr_5"
+
+dispatch2
+	
+%global2
+
+%env2
+
+	%object_2Object*
+s4_9*-
+s4_9
+<synthetic> (*
+s4_10
+s4_13*∆
+s4_10
+<synthetic> (S
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_6"__id**
+
+%env"
+%scope-A_81_PtrK
+I
+
+__unknown_file (
+
+%sc-P_24_3"__id**
+
+%env"
+%scope-P_24K
+I
+
+__unknown_file (
+
+%expr_12"__id**
+
+
+%sc-P_24_3"	
+actionsO
+M
+
+__unknown_file (
+
+%expr_13"__id**
+
+
+%expr_12"
+apiCallFailed∆"√
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx ((
+
+%methRes_2*
+
+
+%expr_12"
+apiCallFailed2
+
+
+%expr_122
+
+%env2*
+
+%error~iSc_2"	
+messageS
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_7"__id**
+
+%env"
+%scope-A_81_Ptr∑"¥
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx
+ (
+
+%funcRes_5*
+
+%sc-A_81_Ptr_7"
+
+dispatch2
+	
+%global2
+
+%env2
+
+
+%methRes_2*
+s4_11
+s4_12*’
+s4_11
+<synthetic>	 	(S
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_8"__id**
+
+%env"
+%scope-A_81_Ptr~|
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx  (I
+	%object_3Object"Objectî
+ë
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx" (/
+
+	%object_3Object"
+type"__id*
+	
+onError©
+¶
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx1 (G 
+
+	%object_3Object"	
+payload"__id**
+
+%error~iSc_2"	
+messageS
+Q
+
+__unknown_file (
+%sc-A_81_Ptr_9"__id**
+
+%env"
+%scope-A_81_Ptræ"ª
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx (
+
+%funcRes_6*
+
+%sc-A_81_Ptr_9"
+
+dispatch2
+	
+%global2
+
+%env2
+
+	%object_3Object*
+s4_12*'
+s4_12
+<synthetic>
+ 
+(*
+s4_13*ö
+s4_13
+<synthetic> (S
+Q
+
+__unknown_file (
+%sc-A_82_nex_4"__id**
+
+%env"
+%scope-A_82_nexS
+Q
+
+__unknown_file (
+%sc-A_82_nex_5"__id**
+
+%env"
+%scope-A_82_nexØ"¨
+]
+S/home/abdua/Desktop/ZemosoTraining/React/blinkistfinal/src/store/middleware/api.tsx   (
+
+%funcRes_7*
+
+%sc-A_82_nex_5"
+next2
+	
+%global2
+
+%env2
+
+
+action"
+
+__unknown_file ( :
+%env:
+actionB 
