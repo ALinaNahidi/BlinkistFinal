@@ -171,6 +171,7 @@ type Book = {
   readTime: string;
   readersCount: string;
   status: string;
+  
 };
 
 interface LocationState {

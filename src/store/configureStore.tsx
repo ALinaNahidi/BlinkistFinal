@@ -8,3 +8,4 @@ export default function config() {
     middleware: (getDefaultMiddleware) => [...getDefaultMiddleware(), api],
   });
 }
+  

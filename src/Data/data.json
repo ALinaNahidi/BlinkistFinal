@@ -22,11 +22,11 @@
       "language": "Danish",
       "link": "https://en.wikipedia.org/wiki/Fairy_Tales_Told_for_Children._First_Collection.\n",
       "pages": 784,
-      "title": "new title for id 5",
+      "title": "Fairy tales",
       "year": 1836,
       "readTime": "15",
       "readersCount": "2.1k",
-      "status": "myLibrary"
+      "status": "reading"
     },
     {
       "id": 4,
@@ -36,7 +36,7 @@
       "language": "Italian",
       "link": "https://en.wikipedia.org/wiki/Divine_Comedy\n",
       "pages": 928,
-      "title": "new title for id 4",
+      "title": "An Epic Story",
       "year": 1315,
       "readTime": "15",
       "readersCount": "2.1k",
@@ -50,7 +50,7 @@
       "language": "Akkadian",
       "link": "https://en.wikipedia.org/wiki/Epic_of_Gilgamesh\n",
       "pages": 160,
-      "title": "new title for id 5",
+      "title": "The Story of Akbar",
       "year": 1970,
       "readTime": "15",
       "readersCount": "2.1k",
@@ -64,11 +64,11 @@
       "language": "Hebrew",
       "link": "https://en.wikipedia.org/wiki/Book_of_Job\n",
       "pages": 176,
-      "title": "new title for id 6",
+      "title": "The Book Of Job",
       "year": -600,
       "readTime": "15",
       "readersCount": "2.1k",
-      "status": "reading"
+      "status": "myLibrary"
     },
     {
       "id": 7,
@@ -82,7 +82,7 @@
       "year": 1970,
       "readTime": "15",
       "readersCount": "2.1k",
-      "status": "finished"
+      "status": "myLibrary"
     },
     {
       "id": 8,
@@ -96,7 +96,7 @@
       "year": 1200,
       "readTime": "15",
       "readersCount": "2.1k",
-      "status": "reading"
+      "status": "finished"
     },
     {
       "id": 9,
@@ -110,7 +110,7 @@
       "year": 1350,
       "readTime": "15",
       "readersCount": "2.1k",
-      "status": "finished"
+      "status": "reading"
     },
     {
       "id": 10,
@@ -124,7 +124,7 @@
       "year": 1813,
       "readTime": "15",
       "readersCount": "2.1k",
-      "status": "finished"
+      "status": "myLibrary"
     },
     {
       "id": 11,
@@ -138,7 +138,7 @@
       "year": 1835,
       "readTime": "15",
       "readersCount": "2.1k",
-      "status": "finished"
+      "status": "myLibrary"
     },
     {
       "id": 12,
@@ -152,7 +152,7 @@
       "year": 1351,
       "readTime": "15",
       "readersCount": "2.1k",
-      "status": "finished"
+      "status": "myLibrary"
     }
   ]
 }

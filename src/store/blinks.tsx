@@ -104,7 +104,6 @@ export const updateBlinkStatus:any =  (id: any, updatedStatus: string) =>
   apiCallBegan({
     // PATCH /blinks/1
     url: url + "/" + id,
-    // onStart: slice.actions.blinksRequested.type,
     method: "patch",
     data: { status: updatedStatus },
     onSuccess:  slice.actions.blinkUpdated.type,
